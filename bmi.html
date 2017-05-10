@@ -1,7 +1,9 @@
 <html>
 <title>intro</title>
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="main.js"></script>
 </head>
 <body>
     <h2>Check your BMI</h2>
@@ -15,9 +17,9 @@
 		</div>
 		<div id="heightInput">
 		 <input id="height" type="number" name="b" value="0"/>
-		 <p>And your height in here (cm)</p>
+		 <p>And your height in here (M)</p>
 		</div>
-         <button type="button" onclick="fnCompareValue(parseInt(a.value))">Click here to calculate your BMI</button>
+         <button type="button" onclick="calculate()">Click here to calculate your BMI</button>
     </form>
     <p id="results">Your BMI results will appear here</p>
 
