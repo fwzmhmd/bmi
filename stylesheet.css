@@ -1,5 +1,10 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
 body {
 	display:inline;
+	background-color: #A9A9A9;
 }
 
 h2 {
@@ -53,8 +58,9 @@ form #weightInput #heightInput{
 #results {
 	display: block;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     border-bottom: 2px solid #000;
+	margin-bottom: 66px;
     width: 28%;
     margin-left: 36%;
 }
@@ -83,6 +89,8 @@ form #weightInput #heightInput{
 
 #weight {
 	width: 169px;
+	border-radius: 20px;
+	padding:1%;
 }
 
 #weightInput {
@@ -98,6 +106,8 @@ form #weightInput #heightInput{
 
 #height {
 	width: 169px;
+	border-radius: 20px;
+	padding:1%;
 }
 
 #heightInput {
@@ -119,8 +129,10 @@ button {
 /*     margin-top: 50px; */
     margin-left: 42%;
 	margin-right: 42%;
+	outline: none;
     padding: 1%;
-    box-shadow: 4px 6px 10px #888888;
+	border-radius: 20px;
+    box-shadow: 2px 3px 10px #888888;
 }
 
 button:active {
