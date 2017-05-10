@@ -1,5 +1,10 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
 body {
 	display:inline;
+	background-color: #A9A9A9;
 }
 
 h2 {
@@ -53,8 +58,9 @@ form #weightInput #heightInput{
 #results {
 	display: block;
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     border-bottom: 2px solid #000;
+	margin-bottom: 66px;
     width: 28%;
     margin-left: 36%;
 }
