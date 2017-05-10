@@ -5,12 +5,14 @@ var getWeight, getHeight, weight, height, measure, bmi ;
 
 
 function calculate() {
-   weight = document.getElementById("weight");
-   height = document.getElementById("height");
+   weight = document.getElementById("weight").value;
+   height = document.getElementById("height").value;
    height = height/100;
+   console.log(height);
    height = height * height;
+   console.log(height);
    bmi = weight/height;
-	if (bmi >= 0 && bmi <= 18.4) {
+	if (bmi <= 18.4) {
 		measure = "You are Underweight";
 	} else if (bmi >= 18.5 && bmi <= 24.9) {
 		measure = "You are Normal";
