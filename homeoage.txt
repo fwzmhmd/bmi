@@ -1,2 +1,8 @@
 This is a new home page
+
+
+second line of the home page
+and a third
+
 this is something different
+
