@@ -1,0 +1,25 @@
+<html>
+<title>intro</title>
+<head>
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+    <h2>Check your BMI</h2>
+
+	<p id="introText">Enter your weight and height below to check your BMI results</p>
+	
+	<form>
+		<div id="weightInput">
+         <input id="weight" type="number" name="a" value="0" />
+		 <p>Put your weight in here (KG)</p>
+		</div>
+		<div id="heightInput">
+		 <input id="height" type="number" name="b" value="0"/>
+		 <p>And your height in here (cm)</p>
+		</div>
+         <button type="button" onclick="fnCompareValue(parseInt(a.value))">Click here to calculate your BMI</button>
+    </form>
+    <p id="results">Your BMI results will appear here</p>
+
+</body>
+</html>
