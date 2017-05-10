@@ -89,6 +89,8 @@ form #weightInput #heightInput{
 
 #weight {
 	width: 169px;
+	border-radius: 20px;
+	padding:1%;
 }
 
 #weightInput {
@@ -104,6 +106,8 @@ form #weightInput #heightInput{
 
 #height {
 	width: 169px;
+	border-radius: 20px;
+	padding:1%;
 }
 
 #heightInput {
@@ -125,8 +129,10 @@ button {
 /*     margin-top: 50px; */
     margin-left: 42%;
 	margin-right: 42%;
+	outline: none;
     padding: 1%;
-    box-shadow: 4px 6px 10px #888888;
+	border-radius: 20px;
+    box-shadow: 2px 3px 10px #888888;
 }
 
 button:active {
