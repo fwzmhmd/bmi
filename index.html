@@ -1,28 +1,68 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>BMI Calculator</title>
+	</head>
+	<body>
+		<div class="title">
+			<h2>BMI Calculator</h2>
+		</div>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>BMI Calculator</title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <script src="main.js"></script>
-</head>
+		<div class="calc-container">
+			<div class="calc-title">
+				<h3>Enter your details</h3>
+			</div>
 
-<body>
-    <h2>Check your <div id="b">B</div><div id="m">M</div><div id="i">I</div></h2>
-    <p id="introText">Enter your weight and height below to check your BMI results</p>
-    <form>
-        <div id="weightInput">
-            <input id="weight" type="number" name="a" value="0" />
-            <p>Put your weight in here (KG)</p>
-        </div>
-        <div id="heightInput">
-            <input id="height" type="number" name="b" value="0" />
-            <p>And your height in here (CM)</p>
-        </div>
-        <button type="button" onclick="calculate()">Click here to calculate your BMI</button>
-    </form>
-    <span id="results">Your <div id="b">B</div><div id="m">M</div><div id="i">I</div> results will appear here</span>
-</body>
+			<div class="calc-label">
+				<label for="">Weight</label>
+			</div>
+			<div class="calc-input">
+				<input type="number">
+				<div class="input-unit">
+					<p>KG</p>
+				</div>
+			</div>
 
+			<div class="calc-label">
+				<label for="">Height</label>
+			</div>
+			<div class="calc-input">
+				<input type="number">
+				<div class="input-unit">
+					<p>CM</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="calc-btn">
+			<button>Calculate</button>
+		</div>
+
+		<div class="results-container">
+			<div class="result-title">
+				<h3>Your BMI is:</h3>
+			</div>
+
+			<div class="result-value">
+				<p>value</p>
+			</div>
+
+			<div class="bmi-title">
+				<h3>This means you are:</h3>
+			</div>
+
+			<div class="bmi-value">
+				<p>bmi-value</p>
+			</div>
+
+			<div class="meaning">
+				<a href="">What does this mean?</a>
+				<div class="question-box">
+					<button>?</button>
+				</div>
+			</div>
+
+		</div>
+	</body>
 </html>
