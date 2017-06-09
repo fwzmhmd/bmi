@@ -1,7 +1,7 @@
 // > greater than
 // < less than
 
-var getWeight, getHeight, weight, height, measure, bmi, error ;
+var getWeight, getHeight, weight, height, measure, bmi, error;
 
 // document.getElementById("results").addEventListener('click',calculate,true);
 
@@ -24,14 +24,12 @@ function calculate() {
 		measure = "You are Obese";
 	}
 	
-
 	if (weight === 0 ) {
 		document.getElementById("results").innerHTML = error;
 	} else if (height === 0){
 		document.getElementById("results").innerHTML = error;
 	}
 	 else {
-
 		document.getElementById("results").value = measure;
 		document.getElementById("bmi").value = bmi;
 	}
