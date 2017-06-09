@@ -12,6 +12,7 @@ function calculate() {
 	height = height/100;
 	height = height * height;
 	bmi = weight/height;
+	bmi = Math.round(bmi);
 
 	if (bmi <= 18.4) {
 		measure = "You are Underweight";
@@ -31,6 +32,7 @@ function calculate() {
 	}
 	 else {
 
-		document.getElementById("results").innerHTML = measure;
+		document.getElementById("results").value = measure;
+		document.getElementById("bmi").value = bmi;
 	}
 }
