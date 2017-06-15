@@ -11,16 +11,6 @@ function pageLoad() {
 	}
 }
 
-function showImperial() {
-	var x = document.getElementsByClassName("height_imperial");
-	
-	if (x.style.display === "none") {
-		x.style.display = "block";
-	} else {
-		x.style.display = "none";
-	}
-}
-
 function showMetric() {
 	var x = document.getElementsByClassName('height_metric');
 	var y = document.getElementsByClassName('weight_metric');
