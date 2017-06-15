@@ -1,71 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="UTF_8">
 		<title>BMI Calculator</title>
 		<link rel="stylesheet" href="style.css">
-		<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700&amp;subset=latin_ext" rel="stylesheet">
 		<script src="main.js" type="application/javascript"></script>
 	</head>
-	<body>
+
+	<body onload="pageLoad()">
 		<div class="title">
-			<h2>BMI Calculator</h2>
+			<h2>Calculate BMI</h2>
 		</div>
 
-		<div class="calc-container">
-			<div class="calc-content">
-				<div class="calc-title">
-					<h3>Enter your details</h3>
-				</div>
+		<div class="unit_type">
+			<p class="sub_label">unit</p>
+			<button onclick="showImperial()" type="button" id="imperial_btn">Imperial</button>
+			<button onclick="showMetric()" type="button" id="metric_btn">Metric</button>
+		</div>
 
-				<div class="calc-label">
-					<label for=""></label>
-				</div>
-				<div class="calc-input">
-					<input type="number" id="weight">
-					<div class="input-unit">
-						<p>KG</p>
-					</div>
-				</div>
+		<div id="age_container">
+			<p class="sub_label">age</p>
+			<input type="text">
+		</div>
 
-				<div class="calc-label">
-					<label for="">Height</label>
-				</div>
-				<div class="calc-input">
-					<input type="number"id="height">
-					<div class="input-unit cm-unit">
-						<p>CM</p>
-					</div>
-				</div>
+		<div class="height_container">
+			<p class="sub_label">height</p>
+			<div class="height_imperial">			
+				<input type="text" placeholder="feet">
+				<input type="text" placeholder="inches">
 			</div>
-			<div class="calc-btn">
-				<button onclick="calculate()">Calculate</button>
+
+			<div class="height_metric">
+				<input type="text" placeholder="cm">
 			</div>
 		</div>
 
-		<div class="results-container">
-			<div class="result-title">
-				<h3>Your BMI is:</h3>
+		<div class="weight_container">
+			<p class="sub_label">weight</p>
+			<div class="weight_imperial">
+				<input type="text" placeholder="pounds">
+			</div>
+			<div class="weight_metric">
+				<input type="text" placeholder="kilograms">
+			</div>
+		</div>
+
+		<div class="calculate_btn">
+			<button>calculate</button>
+		</div>
+
+		<div id="results_container">
+			<div class="result">
+				<h2>Result</h2>
+				<h3>Answer</h3>
+				<p class="bmi_num"></p>
 			</div>
 
-			<div class="result-value">
-				<input id="bmi" type="text" disabled>
+			<div class="result_notes">
+				<p>Note</p>
+				<ul>
+					<li>Underweight BMI range:
+						<ul>
+							<li>10_20</li>
+						</ul>
+					</li>
+					<li>Normal BMI range:
+						<ul>
+							<li>10_20</li>
+						</ul>
+					</li>
+					<li>Overweight BMI range:
+						<ul>
+							<li>10_20</li>
+						</ul>
+					</li>
+				</ul>
 			</div>
-
-			<div class="bmi-title">
-				<h3>This means you are:</h3>
-			</div>
-
-			<div class="bmi-value">
-				<input id="results" type="text" disabled>
-			</div>
-
-			<div class="meaning">
-				<a href="">What does this mean?</a>
-				<div class="question-box">
-					<button>?</button>
-				</div>
-			</div>
-		</div>		
+		</div>
 	</body>
 </html>
