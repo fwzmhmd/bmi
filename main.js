@@ -1,36 +1,52 @@
 // > greater than
 // < less than
 
-var getWeight, getHeight, weight, height, measure, bmi, error;
+function pageLoad() {
+	var x = document.getElementsByClassName('height_metric');
+	var y = document.getElementsByClassName('weight_metric')
+	for(var i=0; i < x.length && i < y.length; i++) { 
+		x[i].style.display='none';
+		y[i].style.display='none';
 
-// document.getElementById("results").addEventListener('click',calculate,true);
-
-function calculate() {
-	weight = document.getElementById("weight").value;
-	height = document.getElementById("height").value;
-	error = "Please enter some values";
-	height = height/100;
-	height = height * height;
-	bmi = weight/height;
-	bmi = Math.round(bmi);
-
-	if (bmi <= 18.4) {
-		measure = "You are Underweight";
-	} else if (bmi >= 18.5 && bmi <= 24.9) {
-		measure = "You are Normal";
-	} else if (bmi >= 25 && bmi <= 29.9) {
-		measure = "You are Overweight";
-	} else if (bmi >= 30) {
-		measure = "You are Obese";
 	}
+}
+
+function showImperial() {
+	var x = document.getElementsByClassName("height_imperial");
 	
-	if (weight === 0 ) {
-		document.getElementById("results").innerHTML = error;
-	} else if (height === 0){
-		document.getElementById("results").innerHTML = error;
+	if (x.style.display === "none") {
+		x.style.display = "block";
+	} else {
+		x.style.display = "none";
 	}
-	 else {
-		document.getElementById("results").value = measure;
-		document.getElementById("bmi").value = bmi;
+}
+
+function showMetric() {
+	var x = document.getElementsByClassName('height_metric');
+	var y = document.getElementsByClassName('weight_metric');
+	var z = document.getElementsByClassName('height_imperial');
+	var u = document.getElementsByClassName('weight_imperial');
+
+	for(var i=0; i < x.length && i < y.length && i < z.length && i < u.length; i++) { 
+		z[i].style.display='none';
+		u[i].style.display='none';
+		x[i].style.display='block';
+		y[i].style.display='block';
 	}
+
+}
+
+function showImperial() {
+	var x = document.getElementsByClassName('height_metric');
+	var y = document.getElementsByClassName('weight_metric');
+	var z = document.getElementsByClassName('height_imperial');
+	var u = document.getElementsByClassName('weight_imperial');
+
+	for(var i=0; i < x.length && i < y.length && i < z.length && i < u.length; i++) { 
+		z[i].style.display='block';
+		u[i].style.display='block';
+		x[i].style.display='none';
+		y[i].style.display='none';
+	}
+
 }
