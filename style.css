@@ -7,4 +7,97 @@
 	box-sizing: border-box;
 }
 
+body {
+	padding: 20px 30px;
+	background-color: red;
+}
 
+#panel {
+	background-color: #FEFDFD;
+	border-radius: 20px;
+	box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.15);
+}
+
+.calculation {
+	padding: 20px;
+}
+
+#results_container {
+	background-color: red;
+	padding: 20px;
+	border-radius: 0 0 20px 20px;
+	box-shadow: 0 -15px 20px -10px rgba(0,0,0,0.2);
+	color: #fff;
+}
+
+.title h2 {
+	text-align: center;
+}
+
+.unit_type {
+	width: 100%;
+	display: inline-block;
+}
+
+.sub_label, #imperial_btn, #metric_btn {
+	float: left;
+}
+
+.sub_label {
+	width: 20%;
+}
+
+input {
+	padding: 5px 10px;
+	width: 80%;
+}
+
+.height_imperial input {
+	max-width: 39%;
+} 
+
+.height_imperial label[for="inches"] {
+	position: fixed;
+	padding: 5px;
+	left: 345px;
+}
+
+.height_imperial label[for="feet"] {
+	position: fixed;
+	padding: 5px;
+	left: 190px;
+}
+
+div.unit_type button {
+	width: 40%;
+	border: 2px solid red;
+	background-color: #fff;
+	padding: 10px;
+	cursor: pointer;
+	outline: none;
+	color: red;
+}
+
+#imperial_btn:active {
+	width: 40%;
+	border: 2px solid red;
+	background-color: red;
+	padding: 10px;
+	cursor: pointer;
+	outline: none;
+	color: red;
+}
+
+div.calculate_btn button {
+	width: 100%;
+	background-color: red;
+	outline: none;
+	border: none;
+	padding: 10px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 2px;
+	cursor: pointer;
+	box-shadow: 0px 0px 10px rgba(255,0,0,0.7);
+}
