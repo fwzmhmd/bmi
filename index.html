@@ -9,73 +9,84 @@
 	</head>
 
 	<body onload="pageLoad()">
-		<div class="title">
-			<h2>Calculate BMI</h2>
-		</div>
+		<div id=panel>
+			<div class="calculation">
+				<div class="title">
+					<!-- <h2>Calculate BMI</h2> -->
+				</div>
 
-		<div class="unit_type">
-			<p class="sub_label">unit</p>
-			<button onclick="showImperial()" type="button" id="imperial_btn">Imperial</button>
-			<button onclick="showMetric()" type="button" id="metric_btn">Metric</button>
-		</div>
+				<div class="unit_type">
+					<p class="sub_label">unit</p>
+					<button onclick="showImperial()" type="button" id="imperial_btn">Imperial</button>
+					<button onclick="showMetric()" type="button" id="metric_btn">Metric</button>
+				</div>
 
-		<div id="age_container">
-			<p class="sub_label">age</p>
-			<input type="text">
-		</div>
+				<div id="age_container">
+					<p class="sub_label">age</p>
+					<input type="text">
+				</div>
 
-		<div class="height_container">
-			<p class="sub_label">height</p>
-			<div class="height_imperial">			
-				<input type="text" placeholder="feet">
-				<input type="text" placeholder="inches">
+				<div class="height_container">
+					<p class="sub_label">height</p>
+					<div class="height_imperial">
+						<label for="feet">feet</label>
+						<input type="text" id="feet">
+						<label for="inches">inches</label>
+						<input type="text" id="inches">
+					</div>
+
+					<div class="height_metric">
+						<input type="text" placeholder="cm">
+					</div>
+				</div>
+
+				<div class="weight_container">
+					<p class="sub_label">weight</p>
+					<div class="weight_imperial">
+						<input type="text" placeholder="pounds">
+					</div>
+					<div class="weight_metric">
+						<input type="text" placeholder="kilograms">
+					</div>
+				</div>
+
+				<div class="calculate_btn">
+					<button onclick="calculateBmi()">calculate</button>
+				</div>
 			</div>
 
-			<div class="height_metric">
-				<input type="text" placeholder="cm">
-			</div>
-		</div>
+			<div id="results_container">
+				<div class="result">
+					<h2>Result</h2>
+					<h3>Answer</h3>
+					<p class="bmi_num"></p>
+				</div>
 
-		<div class="weight_container">
-			<p class="sub_label">weight</p>
-			<div class="weight_imperial">
-				<input type="text" placeholder="pounds">
-			</div>
-			<div class="weight_metric">
-				<input type="text" placeholder="kilograms">
-			</div>
-		</div>
-
-		<div class="calculate_btn">
-			<button>calculate</button>
-		</div>
-
-		<div id="results_container">
-			<div class="result">
-				<h2>Result</h2>
-				<h3>Answer</h3>
-				<p class="bmi_num"></p>
-			</div>
-
-			<div class="result_notes">
-				<p>Note</p>
-				<ul>
-					<li>Underweight BMI range:
-						<ul>
-							<li>10_20</li>
-						</ul>
-					</li>
-					<li>Normal BMI range:
-						<ul>
-							<li>10_20</li>
-						</ul>
-					</li>
-					<li>Overweight BMI range:
-						<ul>
-							<li>10_20</li>
-						</ul>
-					</li>
-				</ul>
+				<div class="result_notes">
+					<p>Note</p>
+					<ul>
+						<li>Underweight BMI range:
+							<ul>
+								<li>Less than 18.5</li>
+							</ul>
+						</li>
+						<li>Normal BMI range:
+							<ul>
+								<li>18.5 - 24.9</li>
+							</ul>
+						</li>
+						<li>Overweight BMI range:
+							<ul>
+								<li>25 - 29.9</li>
+							</ul>
+						</li>
+						<li>Obese BMI range:
+							<ul>
+								<li>30+</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</body>
