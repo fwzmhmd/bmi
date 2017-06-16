@@ -9,12 +9,12 @@
 
 body {
 	padding: 20px 30px;
-	background-color: red;
+	background-color: #f3f3f3;
 }
 
 #panel {
 	background-color: #FEFDFD;
-	border-radius: 20px;
+	border-radius: 15px;
 	box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.15);
 }
 
@@ -25,9 +25,10 @@ body {
 #results_container {
 	background-color: red;
 	padding: 20px;
-	border-radius: 0 0 20px 20px;
+	border-radius: 0 0 15px 15px;
 	box-shadow: 0 -15px 20px -10px rgba(0,0,0,0.2);
 	color: #fff;
+	transform: skew(20deg, -20deg, 30deg, 20deg);
 }
 
 .title h2 {
@@ -45,15 +46,34 @@ body {
 
 .sub_label {
 	width: 20%;
+	font-size: 14px;
+	line-height: 39px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #c1c1c1;
 }
 
 input {
-	padding: 5px 10px;
+	padding:10px;
+	width: 80%;
+	border: 1px solid #8e8e8e;
+	/*transform: skewX(-20deg);*/
+}
+
+input:focus {
+	border: 1px solid red;
+	outline: none;
+	transition: 0.4s;
+}
+
+.height_imperial {
+	float: left;
 	width: 80%;
 }
 
 .height_imperial input {
-	max-width: 39%;
+	width: 50%;
+	float: left;
 } 
 
 .height_imperial label[for="inches"] {
@@ -68,7 +88,29 @@ input {
 	left: 190px;
 }
 
-div.unit_type button {
+.height_imperial label[for="feet"] {
+	position: fixed;
+	padding: 5px;
+	left: 190px;
+}
+
+.selected_unit {
+	width: 40%;
+	border: 2px solid red;
+	background-color: red;
+	padding: 10px;
+	cursor: pointer;
+	outline: none;
+	color: white;
+	font-weight: 700;
+	/* transform: skewX(-20deg, 0deg); */
+}
+
+.selected_unit {
+	transform: skewX(-20deg,);
+}
+
+.unselected_unit {
 	width: 40%;
 	border: 2px solid red;
 	background-color: #fff;
@@ -76,16 +118,8 @@ div.unit_type button {
 	cursor: pointer;
 	outline: none;
 	color: red;
-}
-
-#imperial_btn:active {
-	width: 40%;
-	border: 2px solid red;
-	background-color: red;
-	padding: 10px;
-	cursor: pointer;
-	outline: none;
-	color: red;
+	font-weight: 700;
+	/* transform: skewX(-20deg); */
 }
 
 div.calculate_btn button {
@@ -97,7 +131,62 @@ div.calculate_btn button {
 	color: #fff;
 	text-transform: uppercase;
 	font-weight: 700;
-	letter-spacing: 2px;
 	cursor: pointer;
-	box-shadow: 0px 0px 10px rgba(255,0,0,0.7);
+	font-size: 15px;
+	/*
+	box-shadow: 0px 0px 10px rgba(255,0,0,0.7);*/
+	/* transform: skewX(-20deg); */
+}
+
+.feet_unit {
+	width: 50%;
+}
+
+input #feet {
+	width: 50%;
+}
+
+
+/* Color palette */
+
+.color-palatte {
+	display: inline-block;
+	width: 100%;
+}
+
+.color1, .color2, .color3, .color4, .color5, .color6, .color7 {
+	margin-top: 20px;
+	float: left;
+	width: 16.6666%;
+	height: 60px;
+	background-color: #000;
+	padding: 20px;
+}
+
+.color1 {
+	background-color: #FEFDFD;
+}
+
+.color2 {
+	background-color: #D02221;
+}
+
+.color3 {
+	background-color: #4C1816;
+}
+
+.color4 {
+	background-color: #EB463F;
+}
+
+.color5 {
+	background-color: #A92220;
+}
+
+.color6 {
+	background-color: #E3D5D4;
+}
+
+.color7 {
+	background-color: #E3D5D4;
 }
