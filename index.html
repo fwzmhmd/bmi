@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="UTF_8">
 		<title>BMI Calculator</title>
-		<link rel="stylesheet" href="style.css">
-		<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700&amp;subset=latin_ext" rel="stylesheet">
+		<!-- <link rel="stylesheet" href="style.css"> -->
+		<!-- <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700&amp;subset=latin_ext" rel="stylesheet"> -->
 		<script src="main.js" type="application/javascript"></script>
 	</head>
 
@@ -17,41 +17,47 @@
 
 				<div class="unit_type">
 					<p class="sub_label">unit</p>
-					<button onclick="showImperial()" type="button" id="imperial_btn">Imperial</button>
-					<button onclick="showMetric()" type="button" id="metric_btn">Metric</button>
+					<button onclick="showImperial()" type="button" id="imperial_btn" class="imperial_btn_dft">Imperial</button>
+					<button onclick="showMetric()" type="button" id="metric_btn" class="metric_btn_dft">Metric</button>
 				</div>
 
 				<div id="age_container">
 					<p class="sub_label">age</p>
-					<input type="text">
+					<input type="number" id="age">
 				</div>
 
 				<div class="height_container">
 					<p class="sub_label">height</p>
 					<div class="height_imperial">
-						<label for="feet">feet</label>
-						<input type="text" id="feet">
-						<label for="inches">inches</label>
-						<input type="text" id="inches">
+						<div class="feet_unit">
+							<input type="number" id="feet">
+							<input type="button" value="feet">
+						</div>
+						<div class="inch_unit">
+							<input type="number" id="inches">
+							<input type="button" value="inches">
+						</div>
 					</div>
 
 					<div class="height_metric">
-						<input type="text" placeholder="cm">
+						<input type="number" id="cm">
+						<input type="button" value="cm">
 					</div>
 				</div>
 
 				<div class="weight_container">
 					<p class="sub_label">weight</p>
 					<div class="weight_imperial">
-						<input type="text" placeholder="pounds">
+						<input type="number" placeholder="pounds" id="pounds">
+						<input type="button" value="pounds">
 					</div>
 					<div class="weight_metric">
-						<input type="text" placeholder="kilograms">
+						<input type="number" placeholder="kilograms" id="kg">
 					</div>
 				</div>
 
 				<div class="calculate_btn">
-					<button onclick="calculateBmi()">calculate</button>
+					<button onclick="calculate()">calculate</button>
 				</div>
 			</div>
 
@@ -88,6 +94,17 @@
 					</ul>
 				</div>
 			</div>
+		</div>
+
+
+		<div class="color-palette">
+			<div class="color1"></div>
+			<div class="color2"></div>
+			<div class="color3"></div>
+			<div class="color4"></div>
+			<div class="color5"></div>
+			<div class="color6"></div>
+			<div class="color7"></div>
 		</div>
 	</body>
 </html>
