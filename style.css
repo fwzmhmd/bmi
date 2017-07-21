@@ -26,7 +26,6 @@ body {
 	background-color: red;
 	padding: 20px;
 	border-radius: 0 0 15px 15px;
-	box-shadow: 0 -15px 20px -10px rgba(0,0,0,0.2);
 	color: #fff;
 	transform: skew(20deg, -20deg, 30deg, 20deg);
 }
@@ -94,6 +93,21 @@ input:focus {
 	left: 190px;
 }
 
+.weight_imperial {
+	display: inline-block;
+	width: 80%;
+	float: left;
+}
+
+.weight_imperial input[type="text"] {
+	width: 70%;
+}
+
+.height_metric input {
+	width: 50%;
+	float: left;
+} 
+
 .selected_unit {
 	width: 40%;
 	border: 2px solid red;
@@ -104,10 +118,6 @@ input:focus {
 	color: white;
 	font-weight: 700;
 	/* transform: skewX(-20deg, 0deg); */
-}
-
-.selected_unit {
-	transform: skewX(-20deg,);
 }
 
 .unselected_unit {
@@ -138,12 +148,20 @@ div.calculate_btn button {
 	/* transform: skewX(-20deg); */
 }
 
-.feet_unit {
+.feet_unit, .inch_unit {
 	width: 50%;
+	float: left;
 }
 
-input #feet {
-	width: 50%;
+
+
+#feet, #inches {
+	width: 70%;
+}
+
+input[type=button] {
+	width: 30%;
+	text-align: center;
 }
 
 
