@@ -1,218 +1,47 @@
-* {
-	font-family: 'Open Sans', sans-serif;
-}
-
-body {
-	display:inline;
-	background-color: #A9A9A9;
+button {
+    background-color: rgba(0,0,0,0);
+    outline: none;
 }
 
 h2 {
-	display: block;
-    text-align: center;
-    margin-bottom: 100px;
-    font-size: 5em;
+    margin-bottom: 10px;
 }
 
-#b {
-	color: red;
-	display: inline-block;
-}
-
-#m {
-	color: blue;
-	display: inline-block;
-}
-
-#i {
-	color: yellow;
-	display: inline-block;
-}
-
-form {
-    text-align: center;
-    width: 100%;
-    height: auto;
-    display: inline-block;
-    margin-bottom: 100px;
-    /* margin-left: 33%; */
-    margin-right: auto;
-}
-
-form #weightInput #heightInput{
-  display: block;
-  max-width: 100%;
-  height: auto; 
-}
-
-#introText {
-    text-align: center;
-    margin-bottom: 70px;
-    padding-bottom: 30px;
-    margin-left: 12%;
-    border-bottom: 2px solid #000;
-    width: 75%;
-    font-size: 2em;
-}
-
-#results {
-	display: block;
-    text-align: center;
-    font-size: 1.5em;
-    border-bottom: 2px solid #000;
-	margin-bottom: 66px;
-    width: 28%;
-    margin-left: 36%;
-}
-
-/*  #results:active {
-	-webkit-animation-name: spin;
-    -webkit-animation-duration: 4000ms;
-    -webkit-animation-iteration-count: 4s;
-    -webkit-animation-timing-function: linear;
-
-    -moz-animation-name: spin;
-    -moz-animation-duration: 4000ms;
-    -moz-animation-iteration-count: 4s;
-    -moz-animation-timing-function: linear;
-
-    -ms-animation-name: spin;
-    -ms-animation-duration: 4000ms;
-    -ms-animation-iteration-count: 4s;
-    -ms-animation-timing-function: linear;
-
-    animation-name: spin;
-    animation-duration: 4000ms;
-    animation-iteration-count: 4s;
-    animation-timing-function: linear;
-}  */
-
-#weight {
-	width: 169px;
-	border-radius: 20px;
-	padding:1%;
-}
-
-#weightInput {
-    max-width: 100%;
-    display: block;
-    width: 25%;
-    margin-left: 25%;
-    margin-right: auto;
-    margin-bottom: 50px;
-    float: left;
-    position: relative;
-}
-
-#height {
-	width: 169px;
-	border-radius: 20px;
-	padding:1%;
-}
-
-#heightInput {
-    max-width: 100%;
-    display: block;
-    width: 25%;
-    margin-right: 25%;
+.btn {
+    margin-bottom: 10px;
     margin-left: auto;
-    margin-bottom: 50px;
-    float: right;
-    position: relative;
-}
-
-button {
+    margin-right: auto;
     display: block;
-	max-width: 250px;
-	width: auto;
-	height: auto;
-/*     margin-top: 50px; */
-    margin-left: 42%;
-	margin-right: 42%;
-	outline: none;
-    padding: 1%;
-	border-radius: 20px;
-    box-shadow: 2px 3px 10px #888888;
 }
 
-button:active {
-    position: relative;
-    bottom: -5px;
-    background-color: #3333ff;
+input {
+    width: 100%;
+    padding: 5px 14px;
+    border: 2px solid #201f1d;
+    margin-bottom: 10px;
+    background-color: rgba(0,0,0,.4);
+    outline: none;
+    color: #fff;
+    font-size: 14px;
 }
 
-/* Animation */
+input:focus {
+    border: 2px solid rgba(0,0,0,.4);
+    background-color: rgb(60,60,60);
+}
 
-/*  @-ms-keyframes spin { 
-        from { 
-            -ms-transform: rotate(0deg); 
-        } to { 
-            -ms-transform: rotate(360deg); 
-        }
+form p {
+    margin-bottom: 5px;
+}
+
+.panel {
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .panel {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
     }
-    @-moz-keyframes spin { 
-        from { 
-            -moz-transform: rotate(0deg); 
-        } to { 
-            -moz-transform: rotate(360deg); 
-        }
-    }
-    @-webkit-keyframes spin { 
-        from { 
-            -webkit-transform: rotate(0deg); 
-        } to { 
-            -webkit-transform: rotate(360deg); 
-        }
-    }
-    @keyframes spin { 
-        from { 
-            transform: rotate(0deg); 
-        } to { 
-            transform: rotate(360deg); 
-        }
-    }  */
-
-/* Lower screen resolutions */
-
-@media only screen and (max-width: 715px) {
-
-	h2 {
-		text-align: center;
-		margin-bottom: 100px;
-		font-size: 2.5em;
-	}
-	
-	#introText {
-    text-align: center;
-    margin-bottom: 70px;
-    padding-bottom: 30px;
-    margin-left: 12%;
-    border-bottom: 2px solid #000;
-    width: 75%;
-    font-size: 1em !important;
-	}
-
-	form #weightInput, form #heightInput {
-		float:left;
-		width:100% !important;
-		overflow: hidden;
-		margin: 0px;
-	}
-		
-	button {
-		  display: block;
-	/*     margin-top: 50px; */
-		  margin-left: 35%;
-		  margin-right: 36%;
-		  padding: 1%;
-		  box-shadow: 4px 6px 10px #888888;
-	}
-		
-	#results {
-		 text-align: center;
-		 font-size: 1.5em;
-		 border-bottom: 2px solid #000;
-		 width: 28%;
-		 margin-left: 36%;
-	}
 }
