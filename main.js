@@ -1,9 +1,4 @@
-// > greater than
-// < less than
-
 var getWeight, getHeight, weight, height, measure, bmi, error ;
-
-// document.getElementById("results").addEventListener('click',calculate,true);
 
 function calculate() {
 	weight = document.getElementById("weight").value;
