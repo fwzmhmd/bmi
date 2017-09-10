@@ -1,21 +1,22 @@
-var getWeight, getHeight, weight, height, measure, bmi, error ;
+var weight, height, measure, bmi, error ;
 
 function calculate() {
 	weight = document.getElementById("weight").value;
 	height = document.getElementById("height").value;
 	error = "Please enter some values";
-	height = height/100;
-	height = height * height;
+	height /= 100;
+	height *= height;
 	bmi = weight/height;
+	bmi = bmi.toFixed(1);
 
 	if (bmi <= 18.4) {
-		measure = "You are Underweight";
+		measure = "Your BMI is " + bmi + " which means " + "you are Underweight";
 	} else if (bmi >= 18.5 && bmi <= 24.9) {
-		measure = "You are Normal";
+		measure = "Your BMI is " + bmi + " which means " + "You are Normal";
 	} else if (bmi >= 25 && bmi <= 29.9) {
-		measure = "You are Overweight";
+		measure = "Your BMI is " + bmi + " which means " + "You are Overweight";
 	} else if (bmi >= 30) {
-		measure = "You are Obese";
+		measure = "Your BMI is " + bmi + " which means " + "You are Obese";
 	}
 	
 
