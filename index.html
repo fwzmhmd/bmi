@@ -16,11 +16,11 @@
     			<form>
     				<div id="weightInput">
     					<p>Put your weight in here (KG)</p>
-    		     		<input id="weight" type="number" name="a" />
+    		     		<input id="weight" type="number" pattern="[0-9]*" name="a" />
     				</div>
     				<div id="heightInput">
     					<p>And your height in here (CM)</p>
-	    				 <input id="height" type="number" name="b"/> 
+	    				 <input id="height" type="number" pattern="[0-9]*" name="b"/> 
     				</div>
     		     <button type="button" class="btn" onclick="calculate()">Calculate BMI</button>
     		</form>
