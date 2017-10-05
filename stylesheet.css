@@ -1,3 +1,8 @@
+body {
+    background-color: #eee;
+    text-align: center;
+}
+
 button {
     background-color: rgba(0,0,0,0);
     outline: none;
@@ -30,8 +35,19 @@ input:focus {
     background-color: rgb(60,60,60);
 }
 
+form {
+    background-color: #fff;
+    padding: 20px;
+    color: #000;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.4);
+}
+
 form p {
     margin-bottom: 5px;
+}
+
+form p:nth-child(1){
+    margin-top: 0;
 }
 
 .panel {
@@ -42,6 +58,14 @@ form p {
 @media (min-width: 768px) {
     .panel {
         width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .panel {
+        width: 30%;
         margin-left: auto;
         margin-right: auto;
     }
